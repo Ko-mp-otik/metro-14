@@ -22,9 +22,6 @@
   - type: Icon
     sprite: _Metro14/Structures/Railroad/rails.rsi
     state: icon
-  - type: Physics
-    bodyType: Static
-    canCollide: false
   - type: Tag
     tags:
       - Structure
