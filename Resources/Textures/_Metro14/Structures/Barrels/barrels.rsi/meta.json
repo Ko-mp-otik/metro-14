@@ -8,21 +8,6 @@
   },
   "states": [
     {
-      "name": "base"
-    },
-    {
-      "name": "explosive"
-    },
-    {
-      "name": "radiation"
-    },
-    {
-      "name": "radiation_broken"
-    },
-    {
-      "name": "fireplace"
-    },
-    {
       "name": "wooden"
     },
     {
