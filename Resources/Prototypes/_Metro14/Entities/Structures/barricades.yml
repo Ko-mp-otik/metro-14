@@ -1,7 +1,7 @@
 - type: entity
   name: деревянная баррикада 
   description: Почти сгнившие доски, ржавые гвозди, это вся твоя защита от жесткого мира.
-  id: M_14BarricadeDirectionalwood
+  id: M14BarricadeWoodDirectional
   parent: BaseBarricade
   placement:
     mode: SnapgridCenter
@@ -10,9 +10,6 @@
     sprite: _Metro14/Structures/barricades.rsi
     state: barricade_directionalwood
     noRot: false
-  - type: Construction
-    graph: BarricadeDirectional
-    node: barricadefull
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -35,5 +32,4 @@
   - type: Appearance
   - type: FireVisuals
     sprite: Effects/fire.rsi
-
     normalState: 1
