@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     sprite: _Metro14/Structures/barricades.rsi
-    state: barricade_directionalwood
+    state: wood_directional
     noRot: false
   - type: Physics
   - type: Fixtures

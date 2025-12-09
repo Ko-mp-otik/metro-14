@@ -8,7 +8,7 @@
   },
   "states": [
 	{
-	  "name": "barricade_directionalwood",
+	  "name": "wood_directional",
 	  "directions": 4
 	}
   ]
