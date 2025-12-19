@@ -1,11 +1,11 @@
 - type: entity
   parent: [ClothingHeadBase, BaseFoldable]
-  id: M14ClothingHeadHatUshankaWhite
+  id: M14ClothingHeadHatUshankaBrown
   name: шапка-ушанка
   description: "Тёплая меховая шапка - самый популярный головной убор среди мужчин и женщин, стариков и детей."
   components:
   - type: Clothing
-    sprite: _Metro14/Objects/Clothing/Head/Hats/ushanka_white.rsi
+    sprite: _Metro14/Objects/Clothing/Head/Hats/ushanka_brown.rsi
   - type: Appearance
   - type: AddAccentClothing
     accent: RussianAccent
@@ -15,7 +15,7 @@
     foldedEquippedPrefix: up
     foldedHeldPrefix: up
   - type: Sprite
-    sprite: _Metro14/Objects/Clothing/Head/Hats/ushanka_white.rsi
+    sprite: _Metro14/Objects/Clothing/Head/Hats/ushanka_brown.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -57,4 +57,4 @@
   - type: Sprite
     sprite: _Metro14/Objects/Clothing/Head/Hats/officer_cap.rsi
   - type: Clothing
-    sprite: _Metro14/Objects/Clothing/Head/Hats/officer_cap.rsi   
+    sprite: _Metro14/Objects/Clothing/Head/Hats/officer_cap.rsi
