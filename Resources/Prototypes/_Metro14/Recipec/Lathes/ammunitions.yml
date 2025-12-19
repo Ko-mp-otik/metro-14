@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: M14CartridgeLightRifle
+  result: CartridgeLightRifle
+  completetime: 3
+  materials:
+    Steel: 1250
+    Wood: 1000
