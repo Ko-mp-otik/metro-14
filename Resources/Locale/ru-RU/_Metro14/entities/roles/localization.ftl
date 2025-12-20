@@ -1,2 +1,3 @@
-M14Ganza-name = ганза
-M14Redline-name = красная линия
+M14Ganza-name = Ганза
+M14Redline-name = Красная линия
+M14Gydra-name = Четвертая Гидра
