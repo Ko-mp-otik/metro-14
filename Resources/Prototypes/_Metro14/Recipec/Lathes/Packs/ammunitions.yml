@@ -1,5 +1,4 @@
 - type: latheRecipePack
   id: M14Ammunitions
   recipes:
-  - M14MagazineLightRifle
-  - M14MagazineLightRifleExtended
+  - 
