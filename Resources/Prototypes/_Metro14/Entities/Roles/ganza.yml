@@ -3,7 +3,7 @@
   name: Офицер Ганзы
   description: Вы обязаны следить за всеми,кто идет через границу станции 
   playTimeTracker: OfficerGanza
-  startingGear: SecurityOfficerGear
+  startingGear: M14DefaultZBTGear
   icon: "JobIconGanza"
   canBeAntag: true
 
@@ -37,7 +37,7 @@
   name: Торговый агент ганзы
   description: Вы обязаны следить за всем что идет через границу станции 
   playTimeTracker: TorgAgentGanza
-  startingGear: SecurityOfficerGear
+  startingGear: M14DefaultZBTGear
   icon: "JobIconGanza"
   canBeAntag: true
 
@@ -59,7 +59,7 @@
   name: Гражданин ганзы
   description: Следите за баром,проводите сталкеров,смотрите за грядками
   playTimeTracker: GrazhdaninGanzi
-  startingGear: SecurityOfficerGear
+  startingGear: M14DefaultZBTGear
   icon: "JobIconGanza"
   canBeAntag: true
 
