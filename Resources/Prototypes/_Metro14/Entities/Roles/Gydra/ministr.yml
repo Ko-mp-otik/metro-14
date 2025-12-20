@@ -1,0 +1,11 @@
+- type: job
+  id: M14Ministr
+  name: Председатель Гидры
+  description: Вы второй человек после фюрера. Вы не имеете права идти против воли вождя,вы должны руководить солдатами и следить за деятельностью внутри станции.
+  playTimeTracker: M14Ministr
+  startingGear: M14DefaultZBTGear
+  icon: "JobIconGydra"
+  canBeAntag: true
+
+- type: playTimeTracker
+  id: M14Ministr

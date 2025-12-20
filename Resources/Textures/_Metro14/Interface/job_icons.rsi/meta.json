@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by timxx",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "ganza"
+        },
+        {
+            "name": "redline"
+        },
+        {
+            "name": "techs"
+        },
+        {
+            "name": "vdnh"
+        },
+        {
+            "name": "gydra"
+        },
+        {
+            "name": "sparta"
+        }  
+    ]
+}
