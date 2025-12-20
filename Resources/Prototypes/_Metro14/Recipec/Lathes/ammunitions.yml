@@ -1,7 +1,23 @@
 - type: latheRecipe
-  id: M14CartridgeLightRifle
-  result: CartridgeLightRifle
+  id: M14MagazineBoxLightRifle
+  result: MagazineBoxLightRifle
   completetime: 3
   materials:
-    Steel: 1250
-    Gunpowder: 1000
+    M14Steel: 1000
+    M14Gunpowder: 1000
+
+- type: latheRecipe
+  id: M14ShellShotgun
+  result: ShellShotgun
+  completetime: 3
+  materials:
+    M14Steel: 1000
+    M14Gunpowder: 1000
+
+- type: latheRecipe
+  id: M14CartridgeLightRifle
+  result: CartridgeLightRifle
+  completetime: 0.10
+  materials:
+    M14Steel: 0.05
+    M14Gunpowder: 0.05

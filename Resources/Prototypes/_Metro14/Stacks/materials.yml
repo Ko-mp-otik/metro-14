@@ -1,0 +1,20 @@
+- type: stack
+  parent: BaseVerySmallStack
+  id: M14Gunpowder
+  name: stack-gunpowder
+  icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  spawn: M14MaterialGunpowder
+
+- type: stack
+  parent: BaseMediumStack
+  id: M14WoodPlank
+  name: stack-wood-plank
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: wood }
+  spawn: M14MaterialWoodPlank1
+
+- type: stack
+  parent: BaseSheetStack
+  id: M14Steel
+  name: stack-steel
+  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: steel }
+  spawn: M14MaterialSheetSteel1

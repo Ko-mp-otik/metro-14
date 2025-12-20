@@ -1,0 +1,162 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: M14MaterialBase
+  description: Сырьё.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+  - type: Item
+    sprite: Objects/Materials/materials.rsi
+    size: Normal
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+- type: entity
+  parent: M14MaterialBase
+  id: M14MaterialGunpowder
+  name: порох
+  description: Взрывчатое вещество.
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      M14Gunpowder: 100
+  - type: Stack
+    stackType: M14Gunpowder
+    count: 1
+  - type: Sprite
+    sprite: _Metro14/Objects/materials.rsi
+    state: gunpowder
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+      - RawMaterial
+
+
+- type: entity
+  parent: M14MaterialBase
+  id: M14MaterialWoodPlank
+  name: доска
+  suffix: 30
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      M14Wood: 100
+  - type: Stack
+    stackType: M14WoodPlank
+    baseLayer: base
+    layerStates:
+    - wood
+    - wood_2
+    - wood_3
+  - type: Sprite
+    state: wood
+    layers:
+    - state: wood
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: wood
+  - type: Tag
+    tags:
+    - Wooden
+    - RawMaterial
+    - ConstructionMaterial
+  - type: Extractable
+    grindableSolutionName: wood
+  - type: SolutionContainerManager
+    solutions:
+      wood:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 10
+
+- type: entity
+  parent: M14MaterialWoodPlank
+  id: M14MaterialWoodPlank10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: M14MaterialWoodPlank
+  id: M14MaterialWoodPlank1
+  suffix: 1
+  components:
+  - type: Stack
+    count: 1
+
+
+- type: entity
+  parent: M14SheetMetalBase # _Metro14/Entities/Objects/Materials/Sheets/metal.yml
+  id: M14MaterialSheetSteel
+  name: сталь
+  suffix: 30
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      M14Steel: 100
+  - type: Stack
+    stackType: M14Steel
+    baseLayer: base
+    layerStates:
+    - steel
+    - steel_2
+    - steel_3
+  - type: Sprite
+    state: steel_3
+    layers:
+    - state: steel_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: steel
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: steel
+  - type: SolutionContainerManager
+    solutions:
+      steel:
+        reagents:
+        - ReagentId: Iron
+          Quantity: 9
+        - ReagentId: Carbon
+          Quantity: 1
+
+- type: entity
+  parent: M14MaterialSheetSteel
+  id: M14MaterialSheetSteel10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: steel
+  - type: Stack
+    stackType: Steel
+    count: 10
+
+- type: entity
+  parent: M14MaterialSheetSteel
+  id: M14MaterialSheetSteel1
+  suffix: 1
+  components:
+  - type: Sprite
+    state: steel
+  - type: Stack
+    stackType: Steel
+    count: 1

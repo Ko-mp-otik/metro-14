@@ -35,7 +35,6 @@
   - type: WiresPanel
   - type: ActivatableUI
     key: enum.LatheUiKey.Key
-  - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
       enum.LatheUiKey.Key:
@@ -72,7 +71,7 @@
     solution: lube
 
 - type: entity
-  parent: M14BaseLatheLube
+  parent: BaseStructure
   id: M14Workbench
   name: верстак
   description: Вы можете создать что-то, либо лишиться пары пальцев.
@@ -82,14 +81,6 @@
     snapCardinals: true
     layers:
     - state: icon
-  - type: Machine
-    board: ProtolatheMachineCircuitboard
-  - type: MaterialStorage
-    whitelist: &StandardMaterialWhitelist
-      tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
   - type: Fixtures
     fixtures:
       fix1:
@@ -101,9 +92,38 @@
         - MachineMask
         layer:
           - MachineLayer
+  - type: MaterialStorage
+    whitelist: &StandardMaterialWhitelist
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
   - type: OreSiloClient
+  - type: InteractionOutline
+  - type: ReagentSpeed
+    solution: lube
+    modifiers:
+      SpaceLube: 0.25
+      SpaceGlue: 5
+  - type: SolutionContainerManager
+    solutions:
+      lube:
+        maxVol: 250
+  - type: Spillable
+    solution: lube
+  - type: RefillableSolution
+    solution: lube
+  - type: ExaminableSolution
+    solution: lube
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
   - type: Lathe
     idleState: icon
     staticPacks:
     - M14Weapons
     - M14Magazines
+    - M14Ammunitions

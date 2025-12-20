@@ -22,14 +22,14 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: M14expendedmag
+        startingItem: M14MagazineLightRifleExtended
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
             - MagazineLightRifle
-            - M14expendedmag
+            - M14MagazineLightRifleExtended
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
