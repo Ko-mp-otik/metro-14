@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: BaseBoomBox
-  name: BoomBox
-  description: A boombox for playing music with a volume control. The manufacturer's label has been erased on the back cover...
+  name: Проигрыватель
+  description: Поможет не думать о реальности... Хотя бы на некоторое время.
   components:
     - type: Sprite
       sprite: _Metro14/Objects/Devices/boombox.rsi
@@ -24,6 +24,7 @@
         enum.BoomBoxUiKey.Key:
           type: BoomBoxBoundUserInterface
 
+# начиная с этого момента и до следующего маркера ничего не трогать!!! Я не помню, к чему оно привязано, т.к. писал этого 2 года назад...
 - type: entity
   parent: BaseItem
   id: BaseBoomBoxTape
@@ -84,3 +85,59 @@
 
 - type: Tag
   id: BoomBoxTape
+
+# А вот конец того маркера. Теперь трогай
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeTheValashKnyaz
+  name: Валашский князь
+  description: Для истиных любителей симфоник-мателла.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/ArktidaKnyaz.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeTheMetroTheme
+  name: Песня сталкеров
+  description: Песня для настоящих сталкеров метро.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/Omelchuk.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeThePachkaSigaret
+  name: Пачка сигарет
+  description: Классика...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/PachkaSigaret.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeTheBloodGroup
+  name: Группа крови
+  description: Классика...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/GruppaKrovi.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeTheFlyAway
+  name: Fly Away
+  description: Для любителей металла.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/FlyAway.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BaseBoomBoxTapeTheVosmiklassnica
+  name: Восьмиклассница
+  description: Для тех, кому не хватает хороших воспоминаний.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/_Metro14/BoomBox/Vosmiklassnica.ogg
