@@ -293,7 +293,6 @@
   - type: Sprite
     state: steel
   - type: Stack
-    stackType: Steel
     count: 10
 
 - type: entity
@@ -304,7 +303,6 @@
   - type: Sprite
     state: steel
   - type: Stack
-    stackType: Steel
     count: 1
 
 
@@ -486,9 +484,6 @@
       map: ["base"]
   - type: Item
     heldPrefix: glass
-  - type: FloorTile
-    outputs:
-    - FloorGlass
   - type: Construction
     graph: Glass
     node: SheetGlass
@@ -509,7 +504,6 @@
   - type: Sprite
     state: glass
   - type: Stack
-    stackType: Glass
     count: 10
 
 - type: entity
@@ -520,7 +514,6 @@
   - type: Sprite
     state: glass
   - type: Stack
-    stackType: Glass
     count: 1
 
 
