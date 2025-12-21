@@ -26,25 +26,17 @@ public sealed class SpawnPointSystem : EntitySystem
         // TODO: Cache all this if it ends up important.
         var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
         var possiblePositions = new List<EntityCoordinates>();
-
+        // Metro-changes start
         while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
         {
             if (args.Station != null && _stationSystem.GetOwningStation(uid, xform) != args.Station)
                 continue;
-
-            if (_gameTicker.RunLevel == GameRunLevel.InRound && spawnPoint.SpawnType == SpawnPointType.LateJoin)
-            {
-                possiblePositions.Add(xform.Coordinates);
-            }
-
-            if (_gameTicker.RunLevel != GameRunLevel.InRound &&
-                spawnPoint.SpawnType == SpawnPointType.Job &&
-                (args.Job == null || spawnPoint.Job == null || spawnPoint.Job == args.Job))
+            if (args.Job == null || spawnPoint.Job == null || spawnPoint.Job == args.Job)
             {
                 possiblePositions.Add(xform.Coordinates);
             }
         }
-
+        // Metro-changes end
         if (possiblePositions.Count == 0)
         {
             // Ok we've still not returned, but we need to put them /somewhere/.

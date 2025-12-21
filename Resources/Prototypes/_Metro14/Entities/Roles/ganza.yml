@@ -73,6 +73,7 @@
   name: SpawnGanzaOficcer
   components:
   - type: SpawnPoint
+    spawn_type: LateJoin
     job_id: OfficerGanza
   - type: Sprite
     layers:
@@ -86,6 +87,7 @@
   name: SpawnGanzaTorgAgent
   components:
   - type: SpawnPoint
+    spawn_type: LateJoin
     job_id: TorgAgentGanza
   - type: Sprite
     layers:
@@ -99,6 +101,7 @@
   name: SpawnGanzaNachalnikStanciiganza
   components:
   - type: SpawnPoint
+    spawn_type: LateJoin
     job_id: NachalnikStanciiganza
   - type: Sprite
     layers:
@@ -107,11 +110,12 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointGanzaGrazhdaninGanzi
+  id: M14SpawnPointGanzaGrazhdaninGanzi # Гражданин
   parent: SpawnPointJobBase
   name: SpawnGanzaNachalnikStanciiganza
   components:
   - type: SpawnPoint
+    spawn_type: LateJoin
     job_id: GrazhdaninGanzi
   - type: Sprite
     layers:
