@@ -1,7 +1,7 @@
 - type: entity
   name: Дуплет
   parent: [BaseWeaponShotgun, BaseGunWieldable]
-  id: M14Duplet2033
+  id: M14WeaponShotgunDuplet
   description: Классический дуплет сваренный из двух труб
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
   name: Ашот
   parent: BaseWeaponShotgun
   id: M14WeaponShotgunAshot
-  description: Говно и трубы,описывает своим существованием всё метро.
+  description: Говно и трубы, описывает своим существованием всё метро.
   components: # needs to be super inaccurate because you don't need to wield it
   - type: Sprite
     sprite: _Metro14/Objects/Weapons/Guns/Shotguns/ashot_pistol.rsi
@@ -53,6 +53,3 @@
     graph: ShotgunSawn
     node: shotgunsawn
     deconstructionTarget: null
-
-- type: Tag
-  id: ShellShotgunSlug
