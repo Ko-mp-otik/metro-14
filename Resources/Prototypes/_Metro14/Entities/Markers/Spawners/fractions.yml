@@ -1,9 +1,22 @@
+- type: entity
+  parent: SpawnPointJobBase
+  id: M14SpawnPointJobBase
+  abstract: true
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+  - type: Sprite
+    layers:
+      - state: green
+      - state: cargo_tech
+      - sprite: Markers/jobs.rsi
+
 # Hydra
 
 - type: entity
-  id: M14SpawnPointGydraFurer
-  parent: SpawnPointJobBase
-  name: M14SpawnPointGydraFurer
+  id: M14SpawnPointHydraFurer
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHydraFurer
   components:
   - type: SpawnPoint
     job_id: M14HeadOfHydra
@@ -14,9 +27,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointM14Ministr
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14Ministr
+  id: M14SpawnPointHydraMinistr
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHydraMinistr
   components:
   - type: SpawnPoint
     job_id: M14Minister
@@ -27,9 +40,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointM14SoldierGydra
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14SoldierGydra
+  id: M14SpawnPointHydraSoldier
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHydraSoldier
   components:
   - type: SpawnPoint
     job_id: M14SoldierHydra
@@ -42,9 +55,9 @@
 # RedLine
 
 - type: entity
-  id: SpawnPointredlineGensek
-  parent: SpawnPointJobBase
-  name: M14SpawnRedlineGensek
+  id: M14SpawnPointRedLineGenSec
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointRedLineGenSec
   components:
   - type: SpawnPoint
     job_id: M14HeadOfRedLine
@@ -55,9 +68,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: SpawnPointredlinepolitruk
-  parent: SpawnPointJobBase
-  name: M14SpawnPolitruk
+  id: M14SpawnPointRedLinePolitInst
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointRedLinePolitInst
   components:
   - type: SpawnPoint
     job_id: M14PolitHandRedLine
@@ -68,9 +81,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: SpawnPointredlineSold
-  parent: SpawnPointJobBase
-  name: M14SpawnRedlineSold
+  id: M14SpawnPointRedLineSoldier
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointRedLineSoldier
   components:
   - type: SpawnPoint
     job_id: M14SoldierRedline
@@ -83,9 +96,9 @@
 # Sparta
 
 - type: entity
-  id: SpawnPointM14Polkovnik
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14Polkovnik
+  id: M14SpawnPointSpartaColonel
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointSpartaColonel
   components:
   - type: SpawnPoint
     job_id: M14HeadOfSparta
@@ -96,9 +109,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: SpawnPointM14PodPolkovnik
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14PodPolkovnik
+  id: M14SpawnPointSpartaLieutColonel
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointSpartaLieutColonel
   components:
   - type: SpawnPoint
     job_id: M14LieutenantOfHeadOfSparta
@@ -109,9 +122,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointM14Medicsparta
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14Medicsparta
+  id: M14SpawnPointSpartaMedic
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointSpartaMedic
   components:
   - type: SpawnPoint
     job_id: M14MedicSparta
@@ -122,9 +135,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: SpawnPointM14Soldier
-  parent: SpawnPointJobBase
-  name: M14SpawnPointM14Soldier
+  id: M14SpawnPointSpartaSoldier
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointSpartaSoldier
   components:
   - type: SpawnPoint
     job_id: M14SoldierSparta
@@ -137,9 +150,9 @@
 # Tech
 
 - type: entity
-  id: M14SpawnPointNachalnikTexniki
-  parent: SpawnPointJobBase
-  name: M14SpawnNachalnikTexniki
+  id: M14SpawnPointTechHead
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointTechHead
   components:
   - type: SpawnPoint
     job_id: M14HeadOfTech
@@ -150,9 +163,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointSecurityTech
-  parent: SpawnPointJobBase
-  name: M14SpawnTexniki
+  id: M14SpawnPointTechSecurity
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointTechSecurity
   components:
   - type: SpawnPoint
     job_id: M14SecurityTech
@@ -163,9 +176,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointTexniki
-  parent: SpawnPointJobBase
-  name: M14SpawnTexniki
+  id: M14SpawnPointTech
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointTech
   components:
   - type: SpawnPoint
     job_id: M14TechnicTech
@@ -175,15 +188,15 @@
       - state: cargo_tech
       - sprite: Markers/jobs.rsi
 
-# VDNKH
+# VDNH
 
 - type: entity
-  id: M14SpawnPointNachalnikVdnh
-  parent: SpawnPointJobBase
-  name: M14SpawnNachalnikVdnh
+  id: M14SpawnPointVDNHHead
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointVDNHHead
   components:
   - type: SpawnPoint
-    job_id: M14HeadOfVDNKH
+    job_id: M14HeadOfVDNH
   - type: Sprite
     layers:
       - state: green
@@ -191,12 +204,12 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointOfficerVdnh
-  parent: SpawnPointJobBase
-  name: M14SpawnOfficerVdnh
+  id: M14SpawnPointVDNHOfficer
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointVDNHOfficer
   components:
   - type: SpawnPoint
-    job_id: M14SecurityVDNKH
+    job_id: M14SecurityVDNH
   - type: Sprite
     layers:
       - state: green
@@ -205,11 +218,11 @@
 
 - type: entity
   id: M14SpawnPointStalker
-  parent: SpawnPointJobBase
-  name: M14SpawnStalker
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointStalker
   components:
   - type: SpawnPoint
-    job_id: M14StalkerVDNKH
+    job_id: M14StalkerVDNH
   - type: Sprite
     layers:
       - state: green
@@ -219,9 +232,9 @@
 # Hansa
 
 - type: entity
-  id: M14SpawnPointGanzaNachalnikStanciiganza
-  parent: SpawnPointJobBase
-  name: M14SpawnGanzaNachalnikStanciiganza
+  id: M14SpawnPointHansaHead
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHansaHead
   components:
   - type: SpawnPoint
     job_id: M14HeadOfHansa
@@ -232,9 +245,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointGanzaTorgAgent
-  parent: SpawnPointJobBase
-  name: M14SpawnGanzaTorgAgent
+  id: M14SpawnPointHansaSalesAgent
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHansaSalesAgent
   components:
   - type: SpawnPoint
     job_id: M14TradeAgentHansa
@@ -245,9 +258,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointGanzaofic
-  parent: SpawnPointJobBase
-  name: M14SpawnGanzaOficcer
+  id: M14SpawnPointHansaOfficer
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHansaOfficer
   components:
   - type: SpawnPoint
     job_id: M14OfficerHansa
@@ -258,9 +271,9 @@
       - sprite: Markers/jobs.rsi
 
 - type: entity
-  id: M14SpawnPointGanzaGrazhdaninGanzi
-  parent: SpawnPointJobBase
-  name: M14SpawnGanzaNachalnikStanciiganza
+  id: M14SpawnPointHansaCivilian
+  parent: M14SpawnPointJobBase
+  name: M14SpawnPointHansaCivilian
   components:
   - type: SpawnPoint
     job_id: M14CivilianHansa

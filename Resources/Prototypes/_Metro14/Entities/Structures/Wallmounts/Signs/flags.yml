@@ -47,16 +47,16 @@
 
 - type: entity
   parent: M14BaseFlag
-  id: M14FlagVdnkh
+  id: M14FlagVDNH
   name: флаг ВДНХ
   description: "Ботанический Сад и ВДНХ срослись вместе в одну темную, непроходимую чащобу, среди которой высились облупленные белые купола и крыши павильнов Выставки."
   components:
   - type: Sprite
-    state: vdnkh
+    state: vdnh
 
 - type: entity
-  parent: [M14FlagVdnkh, M14MixinFlagEmblem]
-  id: M14FlagVdnkhEmblem
+  parent: [M14FlagVDNH, M14MixinFlagEmblem]
+  id: M14FlagVDNHEmblem
   components:
   - type: Sprite
-    state: vdnkh_emblem
+    state: vdnh_emblem

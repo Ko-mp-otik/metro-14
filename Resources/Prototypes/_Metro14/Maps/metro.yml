@@ -1,7 +1,7 @@
 - type: gameMap
   id: Metro14
   mapName: 'Metro'
-  mapPath: /Maps/_Metro14/Metro/MetroV21.yml
+  mapPath: /Maps/_Metro14/Metro/MetroV31.yml
   minPlayers: 0
   maxPlayers: 200
   stations:
@@ -9,10 +9,7 @@
       stationProto: StandardNanotrasenStation
       components:
       - type: StationNameSetup
-        mapNameTemplate: '{0} Метро {1}'
-        nameGenerator:
-          !type:NanotrasenNameGenerator
-          prefixCreator: '14-SB'
+        mapNameTemplate: 'Метро'
       - type: StationJobs
         availableJobs:
           # Hydra
@@ -38,9 +35,9 @@
           M14SecurityTech: [ 3, 3]
           M14TechnicTech: [ 3, 3 ]
           # VDNH
-          M14HeadOfVDNKH: [ 1, 1 ]
-          M14SecurityVDNKH: [ 6, 6 ]
-          M14StalkerVDNKH: [ -1, -1 ]
+          M14HeadOfVDNH: [ 1, 1 ]
+          M14SecurityVDNH: [ 6, 6 ]
+          M14StalkerVDNH: [ -1, -1 ]
           
           
           

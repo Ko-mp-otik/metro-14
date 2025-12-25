@@ -51,11 +51,11 @@
   - M14TechnicTech
 
 - type: department
-  id: M14VDNKH
-  name: department-VDNKH
-  description: department-VDNKH-description
+  id: M14VDNH
+  name: department-VDNH
+  description: department-VDNH-description
   color: "#f49628"
   roles:
-  - M14HeadOfVDNKH
-  - M14SecurityVDNKH
-  - M14StalkerVDNKH
+  - M14HeadOfVDNH
+  - M14SecurityVDNH
+  - M14StalkerVDNH

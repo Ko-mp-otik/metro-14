@@ -47,11 +47,11 @@
 - type: playTimeTracker
   id: M14TechnicTech
 
-# VDNKH
+# VDNH
 
 - type: playTimeTracker
-  id: M14HeadOfVDNKH
+  id: M14HeadOfVDNH
 - type: playTimeTracker
-  id: M14SecurityVDNKH
+  id: M14SecurityVDNH
 - type: playTimeTracker
-  id: M14StalkerVDNKH
+  id: M14StalkerVDNH

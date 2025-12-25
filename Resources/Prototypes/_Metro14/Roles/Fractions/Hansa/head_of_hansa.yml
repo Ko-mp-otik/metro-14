@@ -5,7 +5,7 @@
   playTimeTracker: M14HeadOfHansa
   startingGear: M14HeadOfHansaGear
   icon: "JobIconHansa"
-  canBeAntag: true
+  canBeAntag: false
 
 - type: startingGear
   id: M14HeadOfHansaGear

@@ -27,17 +27,17 @@
   description: Надевший её чувствует как тоталитаризм проникает в его тело.
   components:
   - type: Sprite
-    sprite: _Metro14/Clothing/Neck/Mantles/ussr.rsi
+    sprite: _Metro14/Clothing/Neck/Mantles/redline.rsi
   - type: Clothing
-    sprite: _Metro14/Clothing/Neck/Mantles/ussr.rsi 
+    sprite: _Metro14/Clothing/Neck/Mantles/redline.rsi 
 
 - type: entity
   parent: ClothingNeckBase
-  id: M14ClothingNeckMantleVDNKH
+  id: M14ClothingNeckMantleVDNH
   name: мантия лидера ВДНХ
   description: Лидер грибочков и чая.
   components:
   - type: Sprite
-    sprite: _Metro14/Clothing/Neck/Mantles/vdnkh.rsi
+    sprite: _Metro14/Clothing/Neck/Mantles/vdnh.rsi
   - type: Clothing
-    sprite: _Metro14/Clothing/Neck/Mantles/vdnkh.rsi 
+    sprite: _Metro14/Clothing/Neck/Mantles/vdnh.rsi 

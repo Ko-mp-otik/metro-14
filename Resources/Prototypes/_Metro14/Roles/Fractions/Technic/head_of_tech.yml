@@ -5,7 +5,7 @@
   playTimeTracker: M14HeadOfTech
   startingGear: M14HeadOfTechGear
   icon: "JobIconTech"
-  canBeAntag: true
+  canBeAntag: false
 
 - type: startingGear
   id: M14HeadOfTechGear

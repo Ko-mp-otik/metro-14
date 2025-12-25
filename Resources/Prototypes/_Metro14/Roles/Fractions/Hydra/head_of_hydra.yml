@@ -5,7 +5,8 @@
   playTimeTracker: M14HeadOfHydra
   startingGear: M14HeadOfHydraGear
   icon: "JobIconHydra"
-  canBeAntag: true
+  canBeAntag: false
+  whitelisted: true
 
 - type: startingGear
   id: M14HeadOfHydraGear

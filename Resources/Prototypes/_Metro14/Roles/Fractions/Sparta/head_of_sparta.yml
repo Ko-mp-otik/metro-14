@@ -5,7 +5,8 @@
   playTimeTracker: M14HeadOfSparta
   startingGear: M14HeadOfSpartaGear
   icon: "JobIconSparta"
-  canBeAntag: true
+  canBeAntag: false
+  whitelisted: true
 
 - type: startingGear
   id: M14HeadOfSpartaGear

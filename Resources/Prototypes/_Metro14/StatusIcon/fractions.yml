@@ -40,8 +40,8 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconVDNKH
+  id: JobIconVDNH
   icon:
     sprite: _Metro14/Interface/job_icons.rsi
-    state: vdnkh
+    state: vdnh
   jobName: gydravci
